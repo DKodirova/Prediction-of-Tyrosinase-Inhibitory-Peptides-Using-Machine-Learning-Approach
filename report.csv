@@ -1,0 +1,46 @@
+,Feature Set,Type,Lambda,Weight,Training Size,Features,ACC,MSE,SCC,Cross Validation Accuracy
+0,Feature Set #1 (short),Type I (PseACC),2,0.5,38.0,"['1AA1' '1AA2' '1AA3' '1AA4' '1AA5' '1AA6' '1AA7' '1AA8' '1AA9' '1AA10'
+ '1AA11' '1AA12' '1AA13' '1AA14' '1AA15' '1AA16' '1AA17' '1AA18' '1AA19'
+ '1AA20' '1F1' 'result']",61.54,0.38,0.1,94.74
+1,Feature Set #1 (long),Type I (PseACC),1,0.5,174.0,"Index(['1AA1', '1AA2', '1AA3', '1AA4', '1AA5', '1AA6', '1AA7', '1AA8', '1AA9',
+       '1AA10', '1AA11', '1AA12', '1AA13', '1AA14', '1AA15', '1AA16', '1AA17',
+       '1AA18', '1AA19', '1AA20', '1F1', '1F2', 'result'],
+      dtype='object')",91.28,0.09,0.14,59.2
+2,Feature Set #2 (short),Type II (PseACC),2,0.5,38.0,"Index(['2AA1', '2AA2', '2AA3', '2AA4', '2AA5', '2AA6', '2AA7', '2AA8', '2AA9',
+       '2AA10', '2AA11', '2AA12', '2AA13', '2AA14', '2AA15', '2AA16', '2AA17',
+       '2AA18', '2AA19', '2AA20', 'Hydrophobicity', 'Hydrophilicity', 'Mass',
+       'pK1 (alpha-COOH)', 'pK2 (NH3)', 'pI (at 25oC)', 'result'],
+      dtype='object')",61.54,0.38,0.1,94.74
+3,Feature Set #2 (long),Type II (PseACC),1,0.5,174.0,"Index(['2AA1', '2AA2', '2AA3', '2AA4', '2AA5', '2AA6', '2AA7', '2AA8', '2AA9',
+       '2AA10', '2AA11', '2AA12', '2AA13', '2AA14', '2AA15', '2AA16', '2AA17',
+       '2AA18', '2AA19', '2AA20', 'Hydrophobicity', 'Hydrophilicity', 'Mass',
+       'pK1 (alpha-COOH)', 'pK2 (NH3)', 'pI (at 25oC)', 'Hydrophobicity2',
+       'Hydrophilicity2', 'Mass2', 'pK1 (alpha-COOH)2', 'pK2 (NH3)2',
+       'pI (at 25oC)2', 'result'],
+      dtype='object')",90.77,0.09,0.09,59.2
+4,Feature Set #3 (short),Depeptide (PseACC),N/A,N/A,38.0,"Index(['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7', 'AA8', 'AA9', 'AA10',
+       ...
+       'AACharacter372', 'AACharacter373', 'AACharacter374', 'AACharacter375',
+       'AACharacter376', 'AACharacter377', 'AACharacter378', 'AACharacter379',
+       'AACharacter380', 'result'],
+      dtype='object', length=401)",53.85,0.46,,94.74
+5,Feature Set #3 (long),Depeptide (PseACC),N/A,N/A,174.0,"Index(['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7', 'AA8', 'AA9', 'AA10',
+       ...
+       'AACharacter372', 'AACharacter373', 'AACharacter374', 'AACharacter375',
+       'AACharacter376', 'AACharacter377', 'AACharacter378', 'AACharacter379',
+       'AACharacter380', 'result'],
+      dtype='object', length=401)",91.28,0.09,0.14,60.92
+6,All Feature Sets (short),N/A,N/A,N/A,38.0,"Index(['1AA1', '1AA2', '1AA3', '1AA4', '1AA5', '1AA6', '1AA7', '1AA8', '1AA9',
+       '1AA10',
+       ...
+       'AACharacter371', 'AACharacter372', 'AACharacter373', 'AACharacter374',
+       'AACharacter375', 'AACharacter376', 'AACharacter377', 'AACharacter378',
+       'AACharacter379', 'AACharacter380'],
+      dtype='object', length=448)",53.85,0.46,,94.74
+7,All Feature Sets (long),N/A,N/A,N/A,174.0,"Index(['1AA1', '1AA2', '1AA3', '1AA4', '1AA5', '1AA6', '1AA7', '1AA8', '1AA9',
+       '1AA10',
+       ...
+       'AACharacter371', 'AACharacter372', 'AACharacter373', 'AACharacter374',
+       'AACharacter375', 'AACharacter376', 'AACharacter377', 'AACharacter378',
+       'AACharacter379', 'AACharacter380'],
+      dtype='object', length=455)",90.26,0.1,0.05,60.34
