@@ -8,6 +8,7 @@ Tyrosinase is an enzyme vital for the production of melanin and is linked to an 
 **Data**
 
 We have obtained data from Proteins & Peptides Mining Lab, which is open access for everyone on the website (https://pmlabstack.pythonanywhere.com/dataset_TIPred). Proteins & Peptides Mining Lab provides 4 datasets that include information about protein sequences only with the following size distribution:
+
 ![image](https://github.com/DKodirova/Prediction-of-Tyrosinase-Inhibitory-Peptides-Using-Machine-Learning-Approach/assets/141365455/eddbf68c-1f56-4fbe-8afa-e3cbedfc786a)
 
 However, the sequence information alone is not enough as a data to predict if it is TIP-inhibitory or not. Therefore, extraction of new features and adding them to the initial dataset  was needed. For this we used PseAAC - General Software (http://www.csbio.sjtu.edu.cn/bioinf/PseAAC/) created by Shanghai Jiao Tong University, where given the sequence information and input parameters, one can obtain pseudo amino acid composition information. 
@@ -18,6 +19,7 @@ However, the amount of features and importance of features we can extract also d
 **Features**
 
 PseAAC Software allowed us to generate 3 features sets using the following input parameters:
+
 ![image](https://github.com/DKodirova/Prediction-of-Tyrosinase-Inhibitory-Peptides-Using-Machine-Learning-Approach/assets/141365455/60fb8396-7711-4954-a69a-a27daef25fc1)
 
 ![image](https://github.com/DKodirova/Prediction-of-Tyrosinase-Inhibitory-Peptides-Using-Machine-Learning-Approach/assets/141365455/1d841d57-6ad9-4052-8826-a760ff981be9)
@@ -38,6 +40,7 @@ To run the program for prediction simply call “python main.py” on the termin
 **Results and Discussion**
 
 All performance evaluation metrics point that for all feature sets, performance of long sequence datasets was better with accuracy within 90-91% across all feature sets. The main factor that might have affected the lower performance of short sequence datasets is the dataset size. Shorter sequence datasets still included much less number of sequences than the longer ones, resulting in fewer data points. This makes it difficult for the model to find the relationships within the dataset and classify correctly. Therefore, accuracy and error is much lower for short sequence datasets. 
+
 ![image](https://github.com/DKodirova/Prediction-of-Tyrosinase-Inhibitory-Peptides-Using-Machine-Learning-Approach/assets/141365455/e6a1ac8b-a179-4394-8252-3ff3f3e611b0)
 
 **Future Improvements**
